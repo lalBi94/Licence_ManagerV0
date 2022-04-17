@@ -7,9 +7,17 @@
 #define WHEN_ADDING_LICENCE_IS_INCORRECT printf("\n\nUsage: licenceManage <option (a | r | m | l)>\n\n")
 #define PAUSE_END printf("Press any key to quit...")
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <windows.h>
+#include <unistd.h>
 struct LICENCE_MANAGER{
     int ID;
     char* BUYER;
+};
+
+struct CURRENT_STOCK{
+    char* CURRENT_SENTENCE;
 };
 
 int main(int argc, char* argv[]); //main | TAKE a, l, r, m in arguments. | licenceManage <option (a | r | m | l)>

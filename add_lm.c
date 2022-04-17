@@ -1,6 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <windows.h>
 #include "lib_lm.h"
 
 int ID_LICENCE = 0; //number max of the licence left

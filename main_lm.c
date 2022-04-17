@@ -1,12 +1,19 @@
-#include <stdio.h>
-#include <windows.h>
 #include "lib_lm.h"
+
+static int tmp = 0;
 
 /*The all of the function function is explain in lib_lm.h ! */
 
 int main(int argc, char* argv[]){
     SetConsoleTitle("Licence Manager v.0 - Bilaal#7175");
     system("color 0f");
+    int i = 0, j = 0;
+    
+    while(argv[i][j] != '\0'){ 
+        i++; j++;
+    }
+
+    printf("Check : %d\n\n", j);
 
     if(argc < 2){
         system("color 4");

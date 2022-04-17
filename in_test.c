@@ -1,6 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <windows.h>
 #include "lib_lm.h"
 
 #define MAX_LIMIT_LICENCE 10
@@ -22,12 +19,11 @@ int IN_TEST(char* THE_LICENCE){ //DEV TOOLS
 
     char* CHAIN_TO_SEARCH = malloc(sizeof(char) * MAX_LIMIT_LICENCE); //THE_LICENCE
     int I = 0;
+    char CURRENT_CHAR = ' ';
 
-    while(I < 5){
-        *(CHAIN_TO_SEARCH + I) = THE_LICENCE[I];
-        printf("%s, ", *(CHAIN_TO_SEARCH + I));
-        I++;
-    }
+    while((CURRENT_CHAR = fgetc(LICENCE_BILAL)) != EOF){
+            printf("%c", CURRENT_CHAR);
+        }
 
     fclose(LICENCE_BILAL);
     exit(0);

@@ -18,17 +18,17 @@ void DUPLI_CHECK(char* THE_LICENCE){
         char CURRENT_CHAR; int I = 0;
         char* LICENCE_CONTAINER = malloc(sizeof(char) * 15);
 
-        // while((CURRENT_CHAR = fgetc(LICENCE_BILAL)) != EOF){
-        //     while(CURRENT_CHAR != '\n'){
-        //         *(LICENCE_CONTAINER + I) == CURRENT_CHAR;
-        //         I++;
-        //     }
-        //     printf("CHECK\n");
-        // }
+        while((CURRENT_CHAR = fgetc(LICENCE_BILAL)) != EOF){
+            while(CURRENT_CHAR != '\n'){
+                *(LICENCE_CONTAINER + I) == CURRENT_CHAR;
+                I++;
+            }
+            printf("CHECK\n");
+        }
 
-        // for(I = 0; *(LICENCE_CONTAINER + I) != '\0'; I++){
-        //     printf("%s, ", *(LICENCE_CONTAINER + I));
-        // }
+        for(I = 0; *(LICENCE_CONTAINER + I) != '\0'; I++){
+            printf("%s, ", *(LICENCE_CONTAINER + I));
+        }
 
         for(int i = 0; i != 2; i++){
             printf("\n");

@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <windows.h>
 #include "lib_lm.h"
 
 void LIST_OF_LICENCE(){

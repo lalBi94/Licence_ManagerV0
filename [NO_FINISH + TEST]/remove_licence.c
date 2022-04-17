@@ -6,7 +6,7 @@
 
 void DELETE_LICENCE(char* THE_LICENCE){
     FILE* LICENCE_BILAL;
-
+    printf("Dev Interface : TEMP MEMORY ALLOCATION");
     printf("CHECK DELETE : TEST = %s ALL = %s\n\n", *(THE_LICENCE + 0), *THE_LICENCE);
 
     if(LICENCE_BILAL == NULL){
@@ -17,13 +17,13 @@ void DELETE_LICENCE(char* THE_LICENCE){
         exit(1);
     }
 
-    // LICENCE_BILAL = fopen("licence.bilal", "w");
+    LICENCE_BILAL = fopen("licence.bilal", "w");
 
-    // char* line = malloc(BUFFER);
+    char* line = malloc(BUFFER);
 
-    // while(fgets(line, BUFFER, LICENCE_BILAL) != NULL){
-    //     if (strstr(line , THE_LICENCE) != NULL){
-    //      printf("%s",line);
-    //   }
-    // }
+    while(fgets(line, BUFFER, LICENCE_BILAL) != NULL){
+    	 if (strstr(line , THE_LICENCE) != NULL){
+          printf("%s",line);
+         }
+    }
 }
